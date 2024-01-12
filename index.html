@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maze</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content-wrapper">
+			<h1>Maze Generator</h1>
+		</div>
+		<div class="controls-wrapper">
+			<div class="generation-data">
+				<span>Generation Time: <span class="generation-time">10</span>ms</span>
+				<span>Drawing Time: <span class="draw-time">5</span>ms</span>
+			</div>
+			<div class="controls">
+				<div class="generate-new-control">
+					<label>
+						<span>Rows:</span>
+						<input class="rows" type="number" min="2" step="1" value="20" />
+					</label>
+
+					<label>
+						<span>Cols:</span>
+						<input class="cols" type="number" min="2" step="1" value="20" />
+					</label>
+
+					<label>
+						<span>Cell Size:</span>
+						<input class="cellSize" type="number" min="2" step="1" value="20" />
+					</label>
+
+					<button type="button" class="generate-new">Generate New</button>
+				</div>
+				<button type="button" class="show-exit">Show Exit</button>
+			</div>
+		</div>
+		<div class="main-canvas-wrapper">
+			<div class="canvas-wrapper">
+				<canvas class="canvas"></canvas>
+			</div>
+		</div>
+	</div>
+	
+	<script src="app/Graph.js"></script>
+	<script src="app/WorldMap.js"></script>
+	<script src="app/Walker.js"></script>
+	<script src="app/WallsDestroyer.js"></script>
+	<script src="app/Maze.js"></script>
+	<script src="app/Helper.js"></script>
+	<script src="app/Cell.js"></script>
+	<script src="app/View.js"></script>
+	<script src="app/Controller.js"></script>
+	<script src="assets/script.js"></script>
+</body>
+</html>

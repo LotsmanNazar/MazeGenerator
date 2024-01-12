@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'PTSans';
+  src: url(fonts/PTSans-Regular.ttf);
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url(fonts/PTSans-Bold.ttf);
+  font-weight: bold;
+  font-display: swap;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'PTSans';
+	font-size: 14px;
+	background-color: #e0ddff;
+	margin: 0;
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+}
+
+button {
+	font-family: 'PTSans';
+	font-size: 14px;
+	background-color: transparent;
+	display: inline-block;
+	padding: 2px 10px;
+	margin: 0 3px;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	outline: none;
+	cursor: pointer;
+}
+
+.canvas-wrapper {
+	background: linear-gradient(135deg, rgba(255,98,246,1) 0%, rgba(43,225,255,1) 100%);
+}
+
+.wrapper {
+	padding: 20px;
+}
+
+.content-wrapper,
+.generation-data,
+.controls {
+	text-align: center;
+}
+
+.canvas-wrapper {
+	display: flex;
+	margin: auto;
+}
+
+.generation-data > span {
+	display: block;
+}
+
+.generation-data {
+	margin-bottom: 15px;
+}
+
+.content-wrapper h1 {
+	margin: 0;
+}
+
+.content-wrapper {
+	margin-bottom: 15px;
+}
+
+.controls-wrapper {
+	margin-bottom: 20px;
+}
+
+.generate-new-control input[type="number"] {
+	font-size: 14px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #000000;
+	width: 50px;
+}
+
+.controls {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
